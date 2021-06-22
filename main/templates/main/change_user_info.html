@@ -1,0 +1,11 @@
+{% extends 'layout/basic.html' %}
+{% load bootstrap4 %}
+
+{% block title %}Изменение личных данных{% endblock %}
+{% block content %}
+    <form method="post">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons submit='Сохранить' %}{% endbuttons %}
+    </form>
+{% endblock %}
