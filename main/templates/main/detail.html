@@ -5,7 +5,6 @@
 
 {% block content %}
     <p class="text-right mt-2">
-        {% if request.user.pk ==  %}
         <a href="{% url 'profile_bb_change' pk=bb.pk%}">Исправить оъявление</a>
         <a href="{% url 'profile_bb_delete' pk=bb.pk%}">Удалить оъявление</a>
     </p>
