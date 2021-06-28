@@ -5,3 +5,4 @@ Password: 123
 Адрес для получения API:
 http://localhost:8000/api/bbs - Список обяъвлений
 http://localhost:8000/api/bbs/<int>/ - Детальный просмотр объявления
+http://localhost:8000/bbs/<int:pk>/comments/ - Просмотр и добвление комментариев
