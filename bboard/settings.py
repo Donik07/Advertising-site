@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'captcha',
     'rest_framework',
     'corsheaders',
-    'api.apps.ApiConfig',
+    'api.apps',
     'django_filters',
 ]
 

@@ -2,9 +2,13 @@ import django_filters.rest_framework
 from rest_framework import generics
 from rest_framework.permissions import IsAdminUser
 
-from .serializers import *
+from .serializers.BbSerializer import BbSerializer
+from .serializers.BbDetailSerializer import BbDetailSerializer
+from .serializers.CommentSerializer import CommentSerializer
 
-class bbs(generics.ListCreateAPIView):
+from main.models import Bb, Comment
+
+class Bbs(generics.ListCreateAPIView):
     queryset = Bb.objects.filter(is_active=True)
     serializer_class = BbSerializer
     permission_classes = [IsAdminUser]
